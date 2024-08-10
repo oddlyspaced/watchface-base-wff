@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<WatchFace
+    height="450"
+    width="450">
+    <Metadata
+        key="CLOCK_TYPE"
+        value="DIGITAL" />
+    <Metadata
+        key="PREVIEW_TIME"
+        value="10:08:32" />
+    <Scene backgroundColor="#ff000000">
+        <DigitalClock
+            height="450"
+            width="450"
+            x="0"
+            y="0">
+            <TimeText
+                align="CENTER"
+                alpha="255"
+                format="hh:mm"
+                height="100"
+                hourFormat="SYNC_TO_DEVICE"
+                width="450"
+                x="0"
+                y="175">
+                <Variant
+                    mode="AMBIENT"
+                    target="alpha"
+                    value="0" />
+                <!-- Specifying the watch's default font-family by using SYNC_TO_DEVICE instead of a named family -->
+                <Font
+                    color="#ffffffff"
+                    family="SYNC_TO_DEVICE"
+                    size="128"
+                    slant="NORMAL"
+                    weight="NORMAL" />
+            </TimeText>
+            <TimeText
+                align="CENTER"
+                alpha="0"
+                format="hh:mm"
+                height="100"
+                hourFormat="SYNC_TO_DEVICE"
+                width="450"
+                x="0"
+                y="175">
+                <Variant
+                    mode="AMBIENT"
+                    target="alpha"
+                    value="255" />
+                <Font
+                    color="#ffffffff"
+                    family="SYNC_TO_DEVICE"
+                    size="128"
+                    slant="NORMAL"
+                    weight="THIN" />
+            </TimeText>
+        </DigitalClock>
+    </Scene>
+</WatchFace>
